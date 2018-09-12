@@ -1,0 +1,165 @@
+html, body {
+    color: #fff;
+    background-image: url(../img/bg-img.jpg);
+    font-family: 'Ubuntu', sans-serif;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5rem;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    opacity: 0.9;
+    background-image: linear-gradient(to right, rgb(113, 36, 175) , #E66586);
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+}
+header {
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+    line-height: 1.9rem;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0;
+}
+
+#navbar ul {
+    height: 88%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    background-image: linear-gradient(to left,  #F09459, #e66586);
+    color: #fff;
+    display: block;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    transition: 0.5s;
+    font-weight: 5px;
+    list-style: none;
+    position: relative;
+    padding: 8px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+#navbar a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #ffffff;
+    padding: 15px;
+    color: black;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+section article {
+    background-color: #444444;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    opacity: 0.8;
+}
+
+section header {
+    display: block;
+    background-image: linear-gradient(to right, rgb(113, 36, 175) , #E66586);
+    padding: 10px;
+    border-radius: 8px;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+  #navbar ul{
+  border:1px solid;
+    height:207px;
+  }
+    #navbar{
+      background-color:white;
+      position: relative;
+      top:0;
+      padding:0;
+      margin: 0;
+      width:100%;
+      max-height:275px;
+      border:none;
+      z-index:1;
+    }
+  #main-doc{
+    position: relative;
+    margin-left:0px;
+    margin-top:275px;
+  }
+  section {
+      padding: 2px;
+      margin: 3px;
+  }
+
+  code {
+      padding: 1px;
+      margin: 2px;
+      font-size: 13px;
+    width: 90%;
+  }
+
+  section header {
+      margin: 2px;
+      font-size: 22px;
+
+  }
+}
+@media only screen and (max-width: 400px) {
+  #main-doc{
+    margin-left:-10px;
+  }
+  code{
+    margin-left:-20px;
+    width:100%;
+    padding:15px;
+    padding-left:10px;
+    padding-right:45px;
+    min-width:233px;
+  }
+}
